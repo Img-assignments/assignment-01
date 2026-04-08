@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/iitrlogo.jpg"
+      type="image/x-icon"
+    />
+    <title>IITR Saharanpur Campus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-x-hidden w-full">
+    <header class="relative z-[200]">
+      <div
+        class="top-nav relative z-[210] py-1 px-2 md:px-4 lg:px-8 bg-[#3C3C3C] border-b-2 border-[#FEBE10] flex items-center justify-between md:justify-around gap-1 md:gap-6"
+      >
+        <nav class="text-white hidden md:block">
+          <ul
+            class="flex flex-wrap gap-2 md:gap-4 lg:gap-6 text-[0.55rem] md:text-[0.65rem] lg:text-sm"
+          >
+            <li class="cursor-pointer">Saharanpur Campus</li>
+            <li class="cursor-pointer">Noida Campus</li>
+            <li class="cursor-pointer">Webmail</li>
+            <li class="cursor-pointer">iConnect</li>
+            <li class="cursor-pointer">Directory</li>
+            <li class="cursor-pointer">Contact us</li>
+          </ul>
+        </nav>
+
+        <div class="flex md:hidden relative">
+          <p class="text-white text-xs sm:text-base" id="top-menu-selected">
+            Saharanpur Campus
+          </p>
+          <button class="cursor-pointer " id="menubtn">
+            <img
+              src="../assets/down-Vector.svg"
+              alt="down-vector"
+              class="w-3 mx-1"
+            />
+          </button>
+          <div
+            class="absolute bg-[#3C3C3C] text-white top-[32px] left-[-8px] z-[220] origin-top opacity-0 -translate-y-2 scale-y-95 pointer-events-none transition-all duration-300 ease-out "
+            id="menu-dropdown"
+            aria-hidden="true"
+          >
+            <ul
+              class="flex flex-wrap gap-2 text-[0.55rem] flex-col text-xs sm:text-sm py-2 px-3"
+            >
+              <li class="cursor-pointer menu-opt">Saharanpur Campus</li>
+              <li class="cursor-pointer menu-opt">Noida Campus</li>
+              <li class="cursor-pointer menu-opt">Webmail</li>
+              <li class="cursor-pointer menu-opt">iConnect</li>
+              <li class="cursor-pointer menu-opt">Directory</li>
+              <li class="cursor-pointer menu-opt">Contact us</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex items-center m-2 md:my-0 gap-3 md:gap-5 lg:gap-8">
+          <div class="flex gap-1 items-center">
+            <button class="text-white text-xs">A-</button>
+            <button class="text-white text-sm">A</button>
+            <button class="text-white text-base">A+</button>
+          </div>
+
+          <div class="flex gap-0.5">
+            <button class="text-[#232323] bg-[#CFDBE6] text-xs rounded-sm px-2">
+              A
+            </button>
+            <button class="text-[#232323] bg-[#FEBE10] text-xs rounded-sm px-2">
+              A
+            </button>
+          </div>
+
+          <div
+            class="flex gap-1 text-white text-[0.6rem] md:text-xs items-center"
+          >
+            <button>हिंदी</button>
+            <div class="border my-1"></div>
+            <button>ENG</button>
+          </div>
+
+          <div class="hidden md:block">
+            <button
+              class="text-white w-5 h-5 rounded-full flex items-center justify-center"
+            >
+              <img src="../assets/Vector.svg" alt="search" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="below-nav bg-[#222222] flex flex-col items-center px-2 md:px-4 lg:px-0"
+      >
+        <div
+          class="flex justify-between md:justify-center px-2 w-full relative"
+        >
+          <button class="md:hidden w-4 sm:w-6 " id="below-menubtn">
+            <img
+              src="../assets/Ham-icon.svg"
+              alt="menu"
+              class="object-contain w-full"
+            />
+          </button>
+
+          <!-- SLIDE MENU -->
+          <div
+            class=" absolute py-2 px-4 bg-[#222222] top-[93px] left-[-8px] md:hidden opacity-0 -translate-y-2 scale-y-95 pointer-events-none transition-all duration-300 ease-out"
+            aria-hidden="true"
+            id="below-menu-dropdown"
+          >
+            <ul
+              class="flex flex-col gap-3 lg:gap-12 text-white text-[0.55rem] text-xs items-start"
+            >
+              <li class="flex">
+                INSTITUTE
+                <img
+                  src="../assets/down-Vector.svg"
+                  alt="down-vector"
+                  class="w-3 mx-1"
+                />
+              </li>
+              <li class="flex">
+                ADMISSIONS
+                <img
+                  src="../assets/down-Vector.svg"
+                  alt="down-vector"
+                  class="w-3 mx-1"
+                />
+              </li>
+              <li class="flex">
+                ACADEMICS
+                <img
+                  src="../assets/down-Vector.svg"
+                  alt="down-vector"
+                  class="w-3 mx-1"
+                />
+              </li>
+              <li class="flex">
+                DEPARTMENTS
+                <img
+                  src="../assets/down-Vector.svg"
+                  alt="down-vector"
+                  class="w-3 mx-1"
+                />
+              </li>
+              <li class="flex">
+                RESEARCH
+                <img
+                  src="../assets/down-Vector.svg"
+                  alt="down-vector"
+                  class="w-3 mx-1"
+                />
+              </li>
+              <li class="flex">
+                CAMPUS LIFE
+                <img
+                  src="../assets/down-Vector.svg"
+                  alt="down-vector"
+                  class="w-3 mx-1"
+                />
+              </li>
+              <li class="flex">
+                CAREERS
+                <img
+                  src="../assets/down-Vector.svg"
+                  alt="down-vector"
+                  class="w-3 mx-1"
+                />
+              </li>
+              <li class="flex">
+                PLACEMENTS
+                <img
+                  src="../assets/down-Vector.svg"
+                  alt="down-vector"
+                  class="w-3 mx-1"
+                />
+              </li>
+              <li class="flex">
+                RESOURCES
+                <img
+                  src="../assets/down-Vector.svg"
+                  alt="down-vector"
+                  class="w-3 mx-1"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex text-white my-2 md:my-1 items-center gap-2 md:gap-3">
+            <img
+              src="../assets/image 1.svg"
+              alt="logo_iitr"
+              class="w-8 sm:w-10 md:w-14 lg:w-16 h-auto"
+            />
+            <div class="flex flex-col my-1 md:my-2 leading-tight">
+              <p class="hindi-name text-xs sm:text-sm md:text-xl lg:text-2xl">
+                भारतीय प्रौद्योगिकी संस्थान रूड़की
+              </p>
+              <p class="eng-name text-xs md:text-sm lg:text-xl">
+                Indian Institute of Technology Roorkee
+              </p>
+            </div>
+          </div>
+          <button class="md:hidden w-7 sm:w-8">
+            <img
+              src="../assets/Vector.svg"
+              alt="search"
+              class="object-contain w-[98%] h-auto border-2 p-[2px] rounded-full"
+            />
+          </button>
+        </div>
+        <div class="border-[1px] w-[90vw] md:w-[80vw] border-[#F8B300]"></div>
+
+        <p
+          class="block md:hidden hind-name text-white my-2 text-sm md:text-base"
+        >
+          श्रमं विना न किमपि साध्यम्
+        </p>
+
+        <nav class="my-3 md:block hidden">
+          <ul
+            class="flex flex-nowrap justify-center gap-3 lg:gap-12 text-white text-[0.55rem] lg:text-xs items-center"
+          >
+            <li class="flex">
+              INSTITUTE
+              <img
+                src="../assets/down-Vector.svg"
+                alt="down-vector"
+                class="w-3 mx-1"
+              />
+            </li>
+            <li class="flex">
+              ADMISSIONS
+              <img
+                src="../assets/down-Vector.svg"
+                alt="down-vector"
+                class="w-3 mx-1"
+              />
+            </li>
+            <li class="flex">
+              ACADEMICS
+              <img
+                src="../assets/down-Vector.svg"
+                alt="down-vector"
+                class="w-3 mx-1"
+              />
+            </li>
+            <li class="flex">
+              DEPARTMENTS
+              <img
+                src="../assets/down-Vector.svg"
+                alt="down-vector"
+                class="w-3 mx-1"
+              />
+            </li>
+            <li class="flex">
+              RESEARCH
+              <img
+                src="../assets/down-Vector.svg"
+                alt="down-vector"
+                class="w-3 mx-1"
+              />
+            </li>
+            <li class="flex">
+              CAMPUS LIFE
+              <img
+                src="../assets/down-Vector.svg"
+                alt="down-vector"
+                class="w-3 mx-1"
+              />
+            </li>
+            <li class="flex">
+              CAREERS
+              <img
+                src="../assets/down-Vector.svg"
+                alt="down-vector"
+                class="w-3 mx-1"
+              />
+            </li>
+            <li class="flex">
+              PLACEMENTS
+              <img
+                src="../assets/down-Vector.svg"
+                alt="down-vector"
+                class="w-3 mx-1"
+              />
+            </li>
+            <li class="flex">
+              RESOURCES
+              <img
+                src="../assets/down-Vector.svg"
+                alt="down-vector"
+                class="w-3 mx-1"
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="relative large-banner block z-0">
+      <img
+        src="../assets/backgrounds/building.jpg"
+        alt="building"
+        class="w-full h-[80vh] object-cover building hidden md:block relative"
+      />
+
+      <img
+        src="../assets/backgrounds/image 23.svg"
+        alt="building"
+        class="w-full h-[80vh] object-cover building md:hidden relative"
+      />
+
+      <p
+        class="text-white text-3xl sm:text-4xl lg:text-6xl font-bold absolute top-[160px] sm:left-[145px] left-[125px]  md:top-[130px] md:left-[180px] lg:top-[187px] lg:left-[270px] transform -translate-x-1/2 -translate-y-1/2 z-80"
+      >
+        RESEARCH <br />
+        EDUCATE <br />
+        INNOVATE <br />
+        TOMORROW
+      </p>
+    </section>
+
+    <!-- Panels for mobile view -->
+    <div
+      class="mobile-panels font-normal w-[95%] mx-auto grid grid-cols-2 grid-rows-2 md:hidden box-border -mt-12 relative z-50"
+    >
+      <div
+        class="flex items-center justify-center w-full py-5 px-2 bg-[#F8B300]"
+      >
+        <img
+          src="../assets/panels/graduation-cap-icon 1.svg"
+          alt="panel-img"
+          class="shrink-0 w-[35%] min-w-[30%] h-auto block"
+        />
+        <div class="w-[35%] px-1 mx-1">
+          <p class="text-base sm:text-lg text-[#232323]">10300+</p>
+          <p class="text-sm sm:text-base text-[#232323CC]">STUDENTS</p>
+        </div>
+      </div>
+
+      <div
+        class="flex items-center justify-center w-full py-5 px-2 bg-[#202020]"
+      >
+        <img
+          src="../assets/panels/trainee-icon 1.svg"
+          alt="panel-img"
+          class="shrink-0 w-[35%] min-w-[30%] h-auto block"
+        />
+        <div class="w-[35%] px-1 mx-1 text-white">
+          <p class="text-base sm:text-lg">500+</p>
+          <p class="text-sm sm:text-base">FACULTY</p>
+        </div>
+      </div>
+
+      <div
+        class="flex items-center justify-center w-full py-5 px-2 bg-[#202020] text-white"
+      >
+        <img
+          src="../assets/panels/certificate-icon 1.svg"
+          alt="panel-img"
+          class="shrink-0 w-[35%] min-w-[30%] h-auto block"
+        />
+        <div class="w-[35%] px-1 mx-1 text-white">
+          <p class="text-base sm:text-lg">450+</p>
+          <p class="text-sm sm:text-base">PATENTS</p>
+        </div>
+      </div>
+
+      <div
+        class="flex items-center justify-center w-full py-5 px-2 bg-[#F8B300]"
+      >
+        <img
+          src="../assets/panels/business-team-icon 1.svg"
+          alt="panel-img"
+          class="shrink-0 w-[35%] min-w-[30%] h-auto block"
+        />
+        <div class="w-[35%] px-1 mx-1">
+          <p class="text-base sm:text-lg text-[#232323]">600+</p>
+          <p class="text-sm sm:text-base text-[#232323CC]">STAFF</p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="panels font-normal w-8/12 items-center md:w-[80vw] hidden md:flex md:flex-nowrap mx-2 md:mx-16 lg:mx-36 h-36 justify-center md:gap-0 md:-mt-8 relative z-10 overflow-hidden"
+    >
+      <div
+        class="bg-[#99BBD1] flex-1 min-w-0 flex items-center justify-center gap-2 md:gap-3 px-3 md:px-4 lg:px-5 md:py-4 lg:py-6 xl:py-8 mx-[1px] md:mx-0 item1 h-full"
+      >
+        <img
+          src="../assets/panels/graduation-cap-icon 1.svg"
+          alt="panel-img"
+          class="md:w-16 lg:w-24 shrink-0"
+        />
+        <div>
+          <p class="text-sm md:text-lg text-[#232323] leading-tight">10300+</p>
+          <p
+            class="text-xs md:text-sm lg:text-base text-[#232323CC] leading-tight"
+          >
+            STUDENTS
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-[#202020] flex-1 min-w-0 flex items-center justify-center gap-2 md:gap-3 px-3 md:px-4 lg:px-5 md:py-4 lg:py-6 xl:py-8 mx-[1px] md:mx-0 item2 h-full"
+      >
+        <img
+          src="../assets/panels/trainee-icon 1.svg"
+          alt="panel-img"
+          class="md:w-16 lg:w-24 shrink-0"
+        />
+        <div>
+          <p class="text-sm md:text-lg text-white leading-tight">500+</p>
+          <p class="text-xs md:text-sm lg:text-base text-white leading-tight">
+            FACULTY
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#99BBD1] md:flex-1 min-w-0 md:flex items-center justify-center gap-2 md:gap-3 px-3 md:px-4 lg:px-4 md:py-4 lg:py-6 xl:py-8 mx-[1px] md:mx-0 item3 h-full"
+      >
+        <img
+          src="../assets/panels/business-team-icon 1.svg"
+          alt="panel-img"
+          class="md:w-16 lg:w-24 shrink-0"
+        />
+        <div>
+          <p class="text-sm md:text-lg text-[#232323] leading-tight">600+</p>
+          <p
+            class="text-xs md:text-sm lg:text-base text-[#232323CC] leading-tight"
+          >
+            STAFF
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#202020] flex-1 min-w-0 flex items-center justify-center gap-2 md:gap-3 px-3 md:px-4 lg:px-4 md:py-4 lg:py-6 xl:py-8 mx-[1px] md:mx-0 item4 h-full"
+      >
+        <img
+          src="../assets/panels/certificate-icon 1.svg"
+          alt="panel-img"
+          class="md:w-16 lg:w-24 shrink-0"
+        />
+        <div>
+          <p class="text-sm md:text-lg text-white leading-tight">450+</p>
+          <p class="text-xs md:text-sm lg:text-base text-white leading-tight">
+            PATENTS
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section
+      class="research mt-10 mx-auto w-[94vw] md:w-[88vw] lg:w-[80vw] text-[#232323]"
+    >
+      <h1 class="text-sm md:text-base lg:text-lg font-medium">
+        RECENTLY RESEARCH
+      </h1>
+      <div class="research-photos mt-10">
+        <img
+          src="../assets/researches/machinery.svg"
+          alt="Research Image"
+          class="machinery object-fit border-2"
+        />
+        <img
+          src="../assets/researches/cells.svg"
+          alt="Research Image"
+          class="cells object-fit border-2"
+        />
+        <img
+          src="../assets/researches/machinery 2.svg"
+          alt="Research Image"
+          class="machinery2 object-fit border-2"
+        />
+        <img
+          src="../assets/researches/grp-photo.svg"
+          alt="Research Image"
+          class="grp-photo object-fit border-2"
+        />
+        <img
+          src="../assets/researches/telescope.svg"
+          alt="Research Image"
+          class="telescope object-fit border-2"
+        />
+        <img
+          src="../assets/researches/monitoring.svg"
+          alt="Research Image"
+          class="monitoring object-fit border-2"
+        />
+        <img
+          src="../assets/researches/pyomancer.svg"
+          alt="Research Image"
+          class="pyomancer object-fit border-2"
+        />
+        <img
+          src="../assets/researches/map.svg"
+          alt="Research Image"
+          class="map object-fit border-2"
+        />
+      </div>
+    </section>
+
+    <section
+      class="recently-granted-patent mt-10 mx-auto w-[94vw] md:w-[88vw] lg:w-[80vw] text-[#232323]"
+    >
+      <h1 class="text-sm md:text-base lg:text-lg font-medium">
+        RECENTLY GRANTED PATENTS
+      </h1>
+      <div
+        class="flex flex-col md:flex-row w-[96%] md:w-[90%] mx-auto mt-8 md:justify-between gap-4 md:gap-0"
+      >
+        <img
+          src="../assets/Rectangle 329.png"
+          alt="patent-img"
+          class="w-full md:w-[48%] object-cover"
+        />
+        <div class="flex flex-col w-full md:w-[48%] justify-between gap-4">
+          <h2 class="font-semibold text-base md:text-lg lg:text-xl segoe">
+            REAL-TIME FOG REMOVAL SYSTEM AND ITS METHOD THEREOF
+          </h2>
+          <p class="text-sm md:text-base segoe">
+            The present invention provides a visible and near-infrared band's
+            deep learning and pixel sharing-based system and method for image
+            and video dehazing. It successfully restores hazy/foggy images with
+            a wide range of haze/fog conditions. Unlike the prior art; the
+            proposed invention utilized a wide electromagnetic spectrum for
+            imaging from 400nm to 1400nm wavelength and performed dehazing/
+            defogging in the entire range (visible and NIR bands). For this
+            task, a data-driven approach is developed to learn appropriate
+            features from the input image sequences. The spatial multiscale
+            features are extracted using completely separable ID layers that
+            allow pipeline stage insertion to enhance...
+          </p>
+          <div class="flex gap-5">
+            <button class="text-sm border border-black px-3 py-1">
+              READ MORE
+            </button>
+            <button class="text-sm border border-black px-3 py-1">
+              AVAILABLE FOR LICENSE
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ranking bg-[#F9F9F9] flex flex-col-reverse md:flex-col items-center py-6 md:py-8 lg:py-10 mt-10"
+    >
+      <div class="flex flex-wrap flex-col md:flex-row justify-center">
+        <div
+          class="border-b-2 md:border-r-2 md:border-b-0 border-[#C4C4C4] flex flex-col gap-2 justify-center items-center px-4 md:px-2 lg:px-10 py-4 md:py-6 w-full lg:w-auto"
+        >
+          <img
+            src="../assets/rankings/architecture-svgrepo-com 1.svg"
+            alt="architecture"
+            class="h-20 md:h-28 lg:h-36 w-auto"
+          />
+          <p class="text-xs md:text-sm text-center">
+            NIRF RANK 1 IN ARCHITECTURE
+          </p>
+          <p class="text-2xl md:text-3xl font-extrabold faden-text mt-2">#1</p>
+        </div>
+
+        <div
+          class="border-b-2 md:border-r-2 md:border-b-0 border-[#C4C4C4] flex flex-col gap-2 justify-center items-center px-4 md:px-2 lg:px-10 py-4 md:py-6 w-full lg:w-auto"
+        >
+          <img
+            src="../assets/rankings/engineering-svgrepo-com 1.svg"
+            alt="engineering"
+            class="h-20 md:h-28 lg:h-36 w-auto"
+          />
+          <p class="text-xs md:text-sm text-center">
+            NIRF RANK 5 IN ENGINEERING
+          </p>
+          <p class="text-2xl md:text-3xl font-extrabold faden-text mt-2">#5</p>
+        </div>
+
+        <div
+          class="border-b-2 md:border-r-2 md:border-b-0 border-[#C4C4C4] flex flex-col gap-2 justify-center items-center px-4 md:px-2 lg:px-10 py-4 md:py-6 w-full lg:w-auto"
+        >
+          <img
+            src="../assets/rankings/india-gate-svgrepo-com 1.svg"
+            alt="india-gate"
+            class="h-20 md:h-28 lg:h-36 w-auto"
+          />
+          <p class="text-xs md:text-sm text-center">NIRF RANK 14 IN ASIA</p>
+          <p class="text-2xl md:text-3xl font-extrabold faden-text mt-2">#14</p>
+        </div>
+
+        <div
+          class="flex flex-col gap-2 justify-center items-center px-4 md:px-2 lg:px-10 py-4 md:py-6 w-full lg:w-auto"
+        >
+          <img
+            src="../assets/rankings/globe-2-svgrepo-com 2.svg"
+            alt="globe"
+            class="h-20 md:h-28 lg:h-36 w-auto"
+          />
+          <p class="text-xs md:text-sm text-center">
+            RANK #335 IN QS WORLD RANKINGS
+          </p>
+          <p class="text-2xl md:text-3xl font-extrabold faden-text mt-2">
+            #335
+          </p>
+        </div>
+      </div>
+      <p
+        class="font-semibold text-lg md:text-xl lg:text-2xl text-[#232323] mt-8 md:mt-10 mb-10 md:mb-16 text-center px-4"
+      >
+        IIT ROORKEE RANKS AMONG THE TOP UNIVERSITIES
+      </p>
+    </section>
+
+    <section
+      class="achievments pt-10 pb-10 bg-[#F8B300FF] md:bg-[#99BBD1] w-full relative segoe"
+    >
+      <h1
+        class="text-base md:text-xl lg:text-2xl text-[#232323] mb-8 ml-4 md:ml-8 lg:ml-24 lato"
+      >
+        RECENT ACHIEVEMENTS
+      </h1>
+      <div class="w-full flex items-center px-2 md:px-6 lg:px-40">
+        <button
+          id="achievements-prev"
+          type="button"
+          aria-label="Scroll achievements left"
+          class="shrink-0 p-1 md:p-2"
+        >
+          <img
+            src="../assets/sliding-arrow.svg"
+            alt="left arrow"
+            class="w-3 md:w-4"
+          />
+        </button>
+        <div
+          id="achievements-scroller"
+          class="flex-1 min-w-0 flex flex-row flex-nowrap mx-auto overflow-x-auto gap-3 md:gap-4 lg:gap-6 px-2 md:px-4 py-2 achievements-scroll"
+        >
+          <div
+            class="text-white bg-[#232323] flex flex-col flex-none w-[80vw] sm:w-[55vw] md:w-[20rem] lg:w-[22rem] rounded-md"
+          >
+            <img
+              src="../assets/achievements/image 16.svg"
+              alt="achievement"
+              class="w-full h-40 object-cover rounded-t-md"
+            />
+            <h2 class="px-4 py-2 text-md">
+              IIT Roorkee's Perovskite Start-Up Wins in IOCL Challenge for Solar
+              Innovation
+            </h2>
+            <p class="px-4 py-2 text-sm">
+              IIT Roorkee's Perovskite Innovation Pvt Ltd wins Indian Oil's
+              Start-Up Challenge award, aiming to drive green energy initiatives
+              for a sustainable future. Know details here Perovskite Innovation
+              Pvt Ltd.
+            </p>
+          </div>
+          <div
+            class="text-white bg-[#232323] flex-col flex-none w-[80vw] sm:w-[55vw] md:w-[20rem] lg:w-[22rem] rounded-md"
+          >
+            <img
+              src="../assets/achievements/image 17.svg"
+              alt="achievement"
+              class="w-full h-40 object-cover rounded-t-md"
+            />
+            <h2 class="px-4 py-2 text-md">
+              IIT Roorkee-based startup develops gun-shot detection technology
+            </h2>
+            <p class="px-4 py-2 text-sm">
+              A startup, Linearised Amplifier Technologies and Services
+              (Linear-AmpTech), incubated at iHub DivyaSampark of Indian
+              Institute of Technology (IIT) Roorkee has secured the top spot in
+              the Dare to Dream 4.0 contest
+            </p>
+          </div>
+          <div
+            class="text-white bg-[#232323] flex flex-col flex-none w-[80vw] sm:w-[55vw] md:w-[20rem] lg:w-[22rem] rounded-md"
+          >
+            <img
+              src="../assets/achievements/image 18.svg"
+              alt="achievement"
+              class="w-full h-40 object-cover rounded-t-md"
+            />
+            <h2 class="px-4 py-2 text-md">
+              IIT Roorkee leads study on Advanced Grid-Scale Energy Storage
+              Technologies
+            </h2>
+            <p class="px-4 py-2 text-sm">
+              This comprehensive study positions IIT Roorkee at the forefront of
+              cutting-edge research, showcasing its dedication to providing
+              India-centric solutions for a sustainable and resilient energy
+              future
+            </p>
+          </div>
+          <div
+            class="text-white bg-[#232323] flex flex-col flex-none w-[80vw] sm:w-[55vw] md:w-[20rem] lg:w-[22rem] rounded-md"
+          >
+            <img
+              src="../assets/achievements/image 16.svg"
+              alt="achievement"
+              class="w-full h-40 object-cover rounded-t-md"
+            />
+            <h2 class="px-4 py-2 text-md">
+              IIT Roorkee's Perovskite Start-Up Wins in IOCL Challenge for Solar
+              Innovation
+            </h2>
+            <p class="px-4 py-2 text-sm">
+              IIT Roorkee's Perovskite Innovation Pvt Ltd wins Indian Oil's
+              Start-Up Challenge award, aiming to drive green energy initiatives
+              for a sustainable future. Know details here Perovskite Innovation
+              Pvt Ltd.
+            </p>
+          </div>
+          <div
+            class="text-white bg-[#232323] flex flex-col flex-none w-[80vw] sm:w-[55vw] md:w-[20rem] lg:w-[22rem] rounded-md"
+          >
+            <img
+              src="../assets/achievements/image 17.svg"
+              alt="achievement"
+              class="w-full h-40 object-cover rounded-t-md"
+            />
+            <h2 class="px-4 py-2 text-md">
+              IIT Roorkee-based startup develops gun-shot detection technology
+            </h2>
+            <p class="px-4 py-2 text-sm">
+              A startup, Linearised Amplifier Technologies and Services
+              (Linear-AmpTech), incubated at iHub DivyaSampark of Indian
+              Institute of Technology (IIT) Roorkee has secured the top spot in
+              the Dare to Dream 4.0 contest
+            </p>
+          </div>
+          <div
+            class="text-white bg-[#232323] flex flex-col flex-none w-[80vw] sm:w-[55vw] md:w-[20rem] lg:w-[22rem] rounded-md"
+          >
+            <img
+              src="../assets/achievements/image 18.svg"
+              alt="achievement"
+              class="w-full h-40 object-cover rounded-t-md"
+            />
+            <h2 class="px-4 py-2 text-md">
+              IIT Roorkee leads study on Advanced Grid-Scale Energy Storage
+              Technologies
+            </h2>
+            <p class="px-4 py-2 text-sm">
+              This comprehensive study positions IIT Roorkee at the forefront of
+              cutting-edge research, showcasing its dedication to providing
+              India-centric solutions for a sustainable and resilient energy
+              future
+            </p>
+          </div>
+          <div
+            class="text-white bg-[#232323] flex flex-col flex-none w-[80vw] sm:w-[55vw] md:w-[20rem] lg:w-[22rem] rounded-md"
+          >
+            <img
+              src="../assets/achievements/image 16.svg"
+              alt="achievement"
+              class="w-full h-40 object-cover rounded-t-md"
+            />
+            <h2 class="px-4 py-2 text-md">
+              IIT Roorkee's Perovskite Start-Up Wins in IOCL Challenge for Solar
+              Innovation
+            </h2>
+            <p class="px-4 py-2 text-sm">
+              IIT Roorkee's Perovskite Innovation Pvt Ltd wins Indian Oil's
+              Start-Up Challenge award, aiming to drive green energy initiatives
+              for a sustainable future. Know details here Perovskite Innovation
+              Pvt Ltd.
+            </p>
+          </div>
+          <div
+            class="text-white bg-[#232323] flex flex-col flex-none w-[80vw] sm:w-[55vw] md:w-[20rem] lg:w-[22rem] rounded-md"
+          >
+            <img
+              src="../assets/achievements/image 17.svg"
+              alt="achievement"
+              class="w-full h-40 object-cover rounded-t-md"
+            />
+            <h2 class="px-4 py-2 text-md">
+              IIT Roorkee-based startup develops gun-shot detection technology
+            </h2>
+            <p class="px-4 py-2 text-sm">
+              A startup, Linearised Amplifier Technologies and Services
+              (Linear-AmpTech), incubated at iHub DivyaSampark of Indian
+              Institute of Technology (IIT) Roorkee has secured the top spot in
+              the Dare to Dream 4.0 contest
+            </p>
+          </div>
+          <div
+            class="text-white bg-[#232323] flex flex-col flex-none w-[80vw] sm:w-[55vw] md:w-[20rem] lg:w-[22rem] rounded-md"
+          >
+            <img
+              src="../assets/achievements/image 18.svg"
+              alt="achievement"
+              class="w-full h-40 object-cover rounded-t-md"
+            />
+            <h2 class="px-4 py-2 text-md">
+              IIT Roorkee leads study on Advanced Grid-Scale Energy Storage
+              Technologies
+            </h2>
+            <p class="px-4 py-2 text-sm">
+              This comprehensive study positions IIT Roorkee at the forefront of
+              cutting-edge research, showcasing its dedication to providing
+              India-centric solutions for a sustainable and resilient energy
+              future
+            </p>
+          </div>
+        </div>
+        <button
+          id="achievements-next"
+          type="button"
+          aria-label="Scroll achievements right"
+          class="shrink-0 p-1 md:p-2"
+        >
+          <img
+            src="../assets/sliding-arrow2.svg"
+            alt="right arrow"
+            class="w-3 md:w-4"
+          />
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="gallery bg-[#232323] rounded-xl px-4 md:px-6 lg:px-8 w-[94vw] md:w-[95vw] lg:w-[85vw] mx-auto mt-10 text-white pb-8"
+    >
+      <h1 class="text-lg md:text-xl lg:text-2xl py-6 md:py-8">
+        EVENTS GALLERY
+      </h1>
+      <div
+        class="flex flex-col-reverse lg:flex-row justify-between gap-4 lg:gap-0"
+      >
+        <p class="lg:hidden flex text-sm md:text-base segoe text-white">
+          Cognizance, the conjugation of the finest technical minds of the
+          country is the annual technical fest of IIT Roorkee. It is a platform
+          for your ideas to speak out loud and to promote the skills aiming to
+          reach the pinnacle of your mind.
+        </p>
+        <ul
+          class="font-light text-xs md:text-sm w-full lg:w-[15%] pl-0 lg:pl-5 gap-3 md:gap-4 lg:gap-6 py-4 md:py-6 flex flex-row lg:flex-col flex-nowrap overflow-x-scroll px-3"
+        >
+          <li class="w-auto lg:w-[40%]">THOMSO</li>
+          <li class="w-auto lg:w-[40%]">IITRMS</li>
+          <li class="w-auto lg:w-[40%]">CONVOCATION</li>
+          <li class="text-[#232323CC] bg-[#F9B202] w-auto px-2 py-1 rounded-md">
+            COGNIZANCE
+          </li>
+          <li class="w-auto lg:w-[40%]">TEDxIITRoorkee</li>
+          <li class="w-auto lg:w-[40%]">EUNOIA</li>
+          <li class="w-auto lg:w-[40%]">INTER IIT</li>
+        </ul>
+        <div class="w-full lg:w-[85%]">
+          <img
+            src="../assets/event-img.svg"
+            alt="event"
+            class="rounded-lg object-cover w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="milestone w-full">
+      <h1
+        class="text-xl md:text-2xl pt-12 md:pt-16 lg:pt-24 ml-4 md:ml-6 lg:ml-20 text-[#4C4C4C]"
+      >
+        MILESTONES
+      </h1>
+
+      <div
+        class="w-[94vw] md:w-[70%] mx-auto mt-8 flex flex-col md:flex-row gap-6"
+      >
+        <img
+          src="../assets/image 19.svg"
+          alt="nirf"
+          class="w-full md:w-[40%] object-contain"
+        />
+        <div
+          class="w-full md:flex-1 flex flex-col justify-evenly px-4 md:px-5 py-4 md:py-5 gap-6 md:gap-10 segoe"
+        >
+          <h2 class="font-semibold text-base md:text-lg lg:text-xl">
+            IITR’s Architecture Department ranked <b>1st</b> among all colleges
+            in India
+          </h2>
+          <p class="text-sm md:text-base">
+            Department of Architecture, IIT Roorkee remains unparalleled and has
+            maintained its position as rank #1 in the National Institutional
+            Ranking Framework (NIRF) Rankings for 2023. This is the third
+            consecutive time IIT Roorkee has been ranked #1 in NIRF India
+            ranking.
+          </p>
+          <button class="text-sm border border-black px-3 py-1 self-start">
+            READ MORE
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="event-board flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-20 mt-10 lg:mt-20 mb-10 lg:mb-20 mx-auto w-[94vw] md:w-[80vw]"
+    >
+      <div class="noticeboard w-full md:w-1/2">
+        <h1 class="my-5 text-lg md:text-xl font-medium text-[#232323]">
+          NOTICE BOARD
+        </h1>
+        <ul
+          class="bg-[#FACB5559] md:bg-[#99BBD159] rounded-md pt-1 pb-10 segoe"
+        >
+          <li class="mt-5 md:border-b-2 md:border-[#93b5cc] mx-4 md:mx-10 pb-5">
+            <h2 class="text-sm">Administration</h2>
+            <p class="mt-3">
+              Assistant Registrar General Administration Revised rates of
+              minimum wages for outsourced services -reg.
+            </p>
+          </li>
+          <li
+            class="mt-10 md:border-b-2 md:border-[#93b5cc] mx-4 md:mx-10 pb-5"
+          >
+            <h2 class="text-sm">Administration</h2>
+            <p class="mt-3">
+              Assistant Registrar General Administration OM:Extension of the
+              Contract of empanelled advertising agencies
+            </p>
+          </li>
+          <li
+            class="mt-10 md:border-b-2 md:border-[#93b5cc] mx-4 md:mx-10 pb-5"
+          >
+            <h2 class="text-sm">Administration</h2>
+            <p class="mt-3">
+              Assistant Registrar General Administration OM: Extension of
+              Contract Agreement for work hire services
+            </p>
+          </li>
+          <li
+            class="mt-10 md:border-b-2 md:border-[#93b5cc] mx-4 md:mx-10 pb-5"
+          >
+            <h2 class="text-sm">Administration</h2>
+            <p class="mt-3">
+              Assistant Registrar General Administration House Allotment
+              Committee - I
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="events w-full md:w-1/2">
+        <h1 class="my-5 text-lg md:text-xl font-medium text-[#4C4C4C]">
+          UPCOMING EVENTS
+        </h1>
+        <ul class="segoe">
+          <li class="border-b py-5 px-5 flex gap-3">
+            <div
+              class="border-2 border-[#86868633] text-[#000000] px-4 py-1 shadow-sm"
+            >
+              <p class="text-xl">19</p>
+              <p class="text-sm">Oct</p>
+            </div>
+            <div>
+              <h2 class="text-[#000000DE]">IDEAS-2024</h2>
+              <p class="text-sm">
+                International Symposium Innovative Design for Excellence,
+                Affordability and Sustainability
+              </p>
+            </div>
+          </li>
+          <li class="border-b py-5 px-5 flex gap-3">
+            <div
+              class="border-2 border-[#86868633] text-[#000000] px-4 py-1 shadow-sm"
+            >
+              <p class="text-xl">23</p>
+              <p class="text-sm">Sept</p>
+            </div>
+            <div>
+              <h2 class="text-[#000000DE]">Inaugral Lecture</h2>
+              <p class="text-sm">Prof. Shankar Lal Memorial Lecture Series</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="bg-black text-white segoe flex flex-col items-start md:items-start md:flex-row md:justify-evenly gap-8 md:gap-8 px-6 md:px-8 lg:px-0"
+      >
+        <div class="flex flex-col gap-3 w-full md:w-auto px-1">
+          <div
+            class="bg-white rounded-b-lg flex justify-center items-center gap-2 px-4 py-3"
+          >
+            <img src="../assets/image 1.svg" alt="logo" />
+            <p class="font-bold font-sans text-blue-950">IIT ROORKEE</p>
+          </div>
+          <ul class="text-sm flex flex-col gap-1 px-4 py-3">
+            <li>How to reach IIT Roorkee</li>
+            <li>+91-1332-285311</li>
+            <li>registrar@iitr.ac.in</li>
+          </ul>
+        </div>
+        <div class="my-2 md:my-8 w-full md:w-auto px-4">
+          <h1 class="mb-5">EXPLORE</h1>
+          <ul class="w-full md:w-auto mt-4 md:mt-0 text-sm">
+            <li>Administration</li>
+            <li>Tenders and Quotations</li>
+            <li>Awards and Honours</li>
+            <li>RTI</li>
+            <li>Departments</li>
+            <li>Industry Consultation</li>
+            <li>International Students</li>
+          </ul>
+        </div>
+        <div class="my-2 md:my-8 w-full md:w-auto px-4">
+          <h1 class="mb-5">RANKINGS</h1>
+          <ul class="w-full md:w-auto mt-4 md:mt-0 text-sm">
+            <li>NIRF</li>
+            <li>ARIIA</li>
+            <li>QS</li>
+          </ul>
+        </div>
+        <div class="my-2 md:my-8 w-full md:w-auto px-4">
+          <h1 class="mb-5">QUICK ACCESS</h1>
+          <ul class="w-full md:w-auto mt-4 md:mt-0 text-sm">
+            <li>Donate</li>
+            <li>Support @ IITR</li>
+            <li>Intranet Portal</li>
+            <li>Give feedback</li>
+            <li>Webmail</li>
+            <li>Internal Complaints Commitee</li>
+            <li>Book Guest House</li>
+            <li>IIT Council</li>
+            <li>MoE</li>
+          </ul>
+        </div>
+        <div class="my-2 md:my-8 w-full md:w-auto px-4">
+          <h1 class="mb-5">QUICK LINKS</h1>
+          <ul class="w-full md:w-auto mt-4 md:mt-0 text-sm">
+            <li>Safety</li>
+            <li>Security</li>
+            <li>Hindi Cell</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="bg-black text-white md:py-2 segoe flex flex-col md:flex-row justify-between md:px-8 lg:px-24 md:gap-0"
+      >
+        <ul
+          class="text-xs flex flex-wrap gap-3 py-2 justify-center md:gap-5 bg-[#121212] md:bg-black"
+        >
+          <li>Sitemap</li>
+          <li>Privacy Policy</li>
+          <li>Accessibility</li>
+        </ul>
+        <p class="text-xs py-2 md:hidden bg-[#1A1A1A] md:bg-black justify-center flex">
+          Made with ❤️ by: Information Management Group, IITR
+        </p>
+        <p class="text-xs hidden md:flex py-2 bg-[#1A1A1A] md:bg-black justify-center ">
+          Made with Love by: Information Management Group, IITR
+        </p>
+      </div>
+      <div
+        class="md:inter  bg-[#292929] md:bg-[#121212] text-center py-1 text-white text-sm"
+      >
+        Copyright 2026, Institute Computer Centre, IIT Roorkee
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
