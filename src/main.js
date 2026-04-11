@@ -119,3 +119,53 @@ if (belowMenuDropdown && belowMenuBtn) {
         }
     });
 }
+
+const eventList = document.getElementById("event-list");
+
+if (eventList) {
+    const eventItems = eventList.querySelectorAll("li");
+    const activeClasses = ["text-[#232323CC]", "bg-[#F9B202]", "px-2", "py-1", "rounded-md"];
+
+    eventItems.forEach(item => {
+        item.addEventListener("click", function () {
+            eventItems.forEach(eventItem => {
+                eventItem.classList.remove(...activeClasses);
+            });
+
+            this.classList.add(...activeClasses);
+        });
+    });
+}
+
+const timeline = document.querySelector(".timeline");
+
+if (timeline) {
+    const yearItems = timeline.querySelectorAll(".years p");
+    const dotItems = timeline.querySelectorAll(".dots div");
+    const activeYearClasses = ["text-[#F9B202]"];
+    const inactiveYearClasses = ["text-[#23232399]"];
+    const activeDotClasses = ["border-[#F9B202]"];
+    const inactiveDotClasses = ["border-[#23232399]"];
+
+    yearItems.forEach((yearItem, index) => {
+        yearItem.addEventListener("click", function () {
+            yearItems.forEach(item => {
+                item.classList.remove(...activeYearClasses);
+                item.classList.add(...inactiveYearClasses);
+            });
+
+            dotItems.forEach(dot => {
+                dot.classList.remove(...activeDotClasses);
+                dot.classList.add(...inactiveDotClasses);
+            });
+
+            this.classList.remove(...inactiveYearClasses);
+            this.classList.add(...activeYearClasses);
+
+            if (dotItems[index]) {
+                dotItems[index].classList.remove(...inactiveDotClasses);
+                dotItems[index].classList.add(...activeDotClasses);
+            }
+        });
+    });
+}

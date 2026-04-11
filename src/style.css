@@ -135,7 +135,7 @@ body {
 .fade-text {
     color: #232323;
     margin: 0;
-    text-shadow: 20px 20px 0px #FCD37A;
+    text-shadow: 2px 2px 0px #FCD37A;
 }
 
 .inter {
@@ -148,6 +148,10 @@ body {
 
 .segoe {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.roboto{
+    font-family: "Roboto" , sans-serif;
 }
 
 /* .research-photos{
